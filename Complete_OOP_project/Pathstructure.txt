@@ -1,0 +1,40 @@
+
+Tree structure
+====================
+Complete_OOP_project/
+├── src/
+│   └── com/
+│       └── nit/
+│           ├── blogic/
+│           │   ├── BankAccount.java
+│           │   ├── HDFCBankCard.java
+│           │   └── ATMCard.java
+│           └── exception/
+│               ├── InvalidAmountException.java
+│               └── InsufficientFundsException.java
+
+commands
+===================
+1)
+: javac -d bin src\com\nit\exception\InsufficientFundsException.java
+: javac -d bin src\com\nit\exception\InvalidAmountException.javajava -cp bin com.nit.test.MainApp
+
+2)
+: javac -cp bin -d bin src\com\nit\blogic\ATMCard.java
+
+3)To complie BankAccoount.java file
+=====================================
+: javac -d bin src\com\nit\exception\*.java src\com\nit\blogic\BankAccount.java
+
+
+4)to compile all
+=======================
+: javac -d bin src/com/nit/exception/*.java src/com/nit/blogic/*.java
+
+5)To compile src folder
+==========================
+: javac -d bin src/com/nit/**/*.java
+
+6)To run the file
+========================
+java -cp bin com.nit.test.MainApp
